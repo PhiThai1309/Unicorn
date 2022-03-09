@@ -1,0 +1,299 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html {
+    font-family: 'Motter corpus std',Arial,sans-serif;
+}
+:root {
+    --pink: rgb(255, 204, 188);
+    --pink-transparent: rgba(255, 198, 188, 0.397);
+    --emeral: rgb(11, 65, 65);
+    --teal: rgb(11, 31, 31);
+    --white: rgb(255, 255, 255);
+    --greyish: rgb(249, 249, 249);
+}
+.black{
+    color: var(--teal) !important;
+}
+.pink{
+    color: var(--pink) !important;
+}
+.emeral{
+    color: var(--emeral) !important;
+}
+.space{
+    height: 80px;
+}
+.clear{
+    clear: both;
+}
+.navbar__wrapper{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.navbar{
+    z-index: 100;
+    position:fixed;
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #ddd;
+    backdrop-filter: blur(28px);
+    background-color: hsla(0,0%,100%,.6);
+    align-items: center;
+    padding: .5rem 2.5rem;
+}
+.navbar__tittle{
+    float: left;
+    font-family: 'Motter corpus std',Arial,sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.navbar__function{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.function__learn, .function__about, .function__why{
+    float: left;
+    font-family: 'Nunito Sans',sans-serif;
+    color: #0b4141;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.function__button{
+    margin-left: 20px;
+    height: 3rem;
+    padding: .625rem 2rem;
+    align-items: center;
+    border: 2px solid #0b4141;
+    border-radius: 50rem;
+    background-color: var(--emeral);
+    color: var(--pink)
+}
+.tittle{
+    text-align: center;
+    font-size: 5.2rem;
+    color: var(--pink);
+    line-height: 1;
+    font-weight: 900;
+}
+.horse__img{
+    width: 100%;
+    height: auto;
+}
+
+.intro{
+    height: 100vh;
+    position: relative;
+    background-color: var(--pink-transparent);
+    overflow: hidden;
+}
+.content__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.info__tittle{
+    font-weight: 900;
+    font-size: 4.3rem;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.info__content{
+    margin-bottom: 30px;
+}
+.info__content, .info__quote{
+    font-size: 1.25rem;
+    color: var(--white);
+    text-align: center;
+    line-height: 1.6;
+}
+.intro__background-noise, .intro__background-horse{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: none;
+}
+.intro__background__img, .intro__background__horse{
+    height: 100%;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    background-size: cover;
+}
+.intro__background__img{
+    width: 100%;
+}
+.destiny{
+    background-color: var(--emeral);
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.destiny__wrapper{
+    padding-left: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+.destiny__content__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.destiny__header, .destiny__content{
+    color: var(--pink);
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.destiny__header{
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+.destiny__content{
+    font-size: 1.25rem;
+}
+.destiny__button__container{
+    display: flex;
+    justify-content: center;
+}
+.destiny__button{
+    background-color: var(--emeral);
+    color: var(--white);
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 20px;
+    border-color: var(--pink);
+}
+.destiny__img__wrapper{
+    height: 100%;
+}
+.destiny__img{
+    height: auto;
+    width: 100%;
+}
+.feature{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.first-feature, .second-feature{
+    width: auto;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    justify-items: stretch;
+    align-items: start;
+    align-content: center;
+    justify-content: center;
+    gap: 6rem;
+    padding-top: 10rem;
+    overflow: hidden;
+}
+.first-feature__img, .second-feature__img{
+    max-width: 70%;
+    object-fit: fill;
+    box-sizing: border-box;
+}
+.first-feature__content__wrapper, .second-feature__content__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+.feature__tittle{
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+.feature__desc{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--emeral);
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+.scroll__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;;
+}
+.scroll{
+    font-weight: 700;
+    letter-spacing: .33px;
+}
+.scroll__wrapper svg{
+    float: left;
+    padding-right: 15px;
+}
+.bonus{
+    background-color: var(--greyish);
+}
+.bonus__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    width: auto;
+}
+.bonus__tittle{
+    align-items: stretch;
+    font-size: 5rem;
+    line-height: 1.2;
+    font-weight: 900;
+    color: var(--pink);
+    text-align: center;
+}
+.bonus__content{
+    color: var(--emeral);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: 'Nunito Sans',sans-serif;
+    text-align: center;
+}
+.bonus__img{
+    width: 100%;
+    height: auto;
+}

@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Motter corpus std';
+    src: url('https://uploads-ssl.webflow.com/61e7d11b749678470086df5c/61e7e850256688baf87912bb_Motter%20Corpus%20Std%20Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
 *{
     margin: 0%;
     padding: 0%;
@@ -63,7 +70,6 @@ html {
 }
 .function__learn, .function__about, .function__why{
     float: left;
-    font-family: 'Nunito Sans',sans-serif;
     color: #0b4141;
     font-size: 1rem;
     line-height: 1.5;
@@ -72,6 +78,7 @@ html {
     margin-bottom: auto;
 }
 .function__button{
+    font-family: inherit;
     margin-left: 20px;
     height: 3rem;
     padding: .625rem 2rem;
@@ -80,6 +87,9 @@ html {
     border-radius: 50rem;
     background-color: var(--emeral);
     color: var(--pink)
+}
+.tittle__container{
+    padding-top: 7rem;
 }
 .tittle{
     text-align: center;
@@ -282,6 +292,7 @@ html {
     font-weight: 900;
     color: var(--pink);
     text-align: center;
+    margin-bottom: 20px;
 }
 .bonus__content{
     color: var(--emeral);
@@ -290,7 +301,6 @@ html {
     line-height: 1.6;
     padding-left: 20%;
     padding-right: 20%;
-    font-family: 'Nunito Sans',sans-serif;
     text-align: center;
 }
 .bonus__img{
